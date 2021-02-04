@@ -1,7 +1,7 @@
 :root {
   --color-primary: #FFBF00;
   --color-secondary: #645B04;
-  --color-accent: #FF9201;
+  --color-accent: #007757;
   --color-headings: #0D0D46; 
   --color-body: #626275;
 }
@@ -10,6 +10,10 @@ html {
   /* !!! font-size: 62.5% = 10px !!!  */
   font-size: 62.5%;
 }
+
+
+/* TOPOGRAPHY */
+
 
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
@@ -41,6 +45,7 @@ p {
   margin-top: 0;
 }
 
+
 @media screen and (min-width: 1024px) {
   body {
     font-size: 1.8rem;
@@ -56,5 +61,37 @@ p {
 
   h3 {
     font-size: 2.4rem;
+  }
+}
+
+
+/*  LINKS  */
+
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.link-arrow::after {
+  content: '-->';
+  margin-left: 5px;
+  transition: margin .25s;
+}
+
+.link-arrow:hover::after {
+  margin-left: 15 px;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+  .link-arrow {
+    font-size: 1.5rem;
   }
 }
