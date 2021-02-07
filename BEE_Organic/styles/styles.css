@@ -2,7 +2,7 @@
   --color-primary: #FFBF00;
   --color-secondary: #645B04;
   --color-accent: #007757;
-  --color-headings: #0D0D46; 
+  --color-headings: #312a00; 
   --color-body: #626275;
 }
 
@@ -123,4 +123,25 @@ a {
   .list--tick .list__item {
     padding-left: 0;
 }
+}
+
+   /* ICONS */
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--primary {
+  color: var(--color-primary);
+}
+
+.icon-container {
+  background: rgb(94, 167, 163);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
