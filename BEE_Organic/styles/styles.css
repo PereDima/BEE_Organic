@@ -45,7 +45,6 @@ p {
   margin-top: 0;
 }
 
-
 @media screen and (min-width: 1024px) {
   body {
     font-size: 1.8rem;
@@ -94,4 +93,34 @@ a {
   .link-arrow {
     font-size: 1.5rem;
   }
+}
+
+
+      /* LISTS */
+
+.lists {
+ list-style: none;
+ padding-left: 0; 
+ color: var(--color-headings);
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(../images/tick.svg);
+  padding-left: 3rem;
+}
+
+.list--tick .list__item {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024 px) {
+  .list--tick .list__item {
+    padding-left: 0;
+}
 }
