@@ -198,7 +198,7 @@ a {
 }
 
 .icon--primary {
-  color:var(--color-primary);
+  color: var(--color-primary);
 }
 
 .icon--white {
@@ -455,7 +455,6 @@ a {
   }
 }
 
-
 /* MEDIA */
 
 .media {
@@ -476,9 +475,7 @@ a {
   display: grid;
 }
 
-
 @media screen and (min-width: 768px) {
-  
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -508,7 +505,6 @@ a {
 .callout .btn {
   justify-self: center;
   align-self: center;
-
 }
 
 .callout__content {
@@ -516,11 +512,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-
   .callout .grid--1x2 {
     grid-template-columns: 1fr auto;
   }
-  
+
   .callout__content {
     text-align: left;
   }
@@ -555,15 +550,14 @@ a {
   transition: all 0.5s;
 }
 
-.collapsible--expanded .collapsible__chevron{
+.collapsible--expanded .collapsible__chevron {
   transform: rotate(0);
 }
 
-.collapsible--expanded .collapsible__content{
+.collapsible--expanded .collapsible__content {
   max-height: 100vh;
   opacity: 1;
 }
-
 
 /* BLOCKS */
 
@@ -573,7 +567,6 @@ a {
 }
 
 .block__heading {
-
 }
 
 .block--dark {
@@ -596,10 +589,82 @@ a {
 }
 
 .block__header {
-  text-align: center; 
+  text-align: center;
 }
 
 .container {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+/* NAVIGATION */
+
+/* TODO: change colors for nav menu!!!!
+
+  add "menu icon" to sprite!!!
+*/
+
+.nav {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0%;
+}
+
+.nav__item {
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav__item > a {
+  color: #ccc;
+  transition: color 0.4s;
+}
+
+.nav__item > a:hover {
+  color: yellow;
+}
+
+/* TODO: remove "border" propperty after color matchin!!! */
+
+.nav__toggler {
+  opacity: 0.5;
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+  border: 1px solid #cbcbd7;
+}
+
+.nav.collapsible--expanded .nav__toggler {
+  opacity: 1;
+  box-shadow: 0 0 0 3px #dad4d4;
+  border-radius: 5px;
+}
+
+
+
+@media screen and (min-width: 850px) {
+
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__list {
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .nav__item {
+    border: 0;
+  }
+
 }
