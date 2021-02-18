@@ -95,6 +95,7 @@ h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
   letter-spacing: 0.1rem;
+  line-height: 1.1;
 }
 
 h1 {
@@ -566,8 +567,6 @@ a {
   padding: var(--padding-vertical) 2rem;
 }
 
-.block__heading {
-}
 
 .block--dark {
   background: #000;
@@ -667,4 +666,46 @@ a {
     border: 0;
   }
 
+}
+
+
+/* HERO */
+
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.hero__parag {
+  font-size: 1.8rem;
+  letter-spacing: .5px;
+  margin: 1rem 0 3rem;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+.hero__content  a {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+
+  .hero__content {
+    text-align: left;
+    align-self: center;
+  }
+
+  .hero__parag {
+    font-size: 1.6rem;
+  }
+  
+  .hero__image {
+    padding-top: 5rem;
+  }
+
+  .hero__heading {
+    font-size: 7rem;
+  }
 }
