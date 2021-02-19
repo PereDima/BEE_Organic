@@ -203,7 +203,7 @@ a {
 }
 
 .icon--white {
-  color: #fff;
+  fill: #fff;
 }
 
 .icon-container {
@@ -637,7 +637,6 @@ a {
   opacity: 0.5;
   transition: box-shadow 0.2s;
   cursor: pointer;
-  border: 1px solid #cbcbd7;
 }
 
 .nav.collapsible--expanded .nav__toggler {
@@ -682,6 +681,7 @@ a {
 }
 
 .hero__image {
+  margin-top: 4rem;
   width: 100%;
 }
 
