@@ -473,18 +473,22 @@ a {
 /* GRIDS */
 
 .grid {
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  
 }
 
 @media screen and (min-width: 768px) {
   .grid--1x2 {
-    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .grid--1x3 {
-    grid-template-columns: repeat(3, 1fr);
+    flex-direction: row;
   }
 }
 
@@ -563,8 +567,9 @@ a {
 /* BLOCKS */
 
 .block {
-  --padding-vertical: 6rem;
+  --padding-vertical: 5rem;
   padding: var(--padding-vertical) 2rem;
+  
 }
 
 
@@ -589,6 +594,7 @@ a {
 
 .block__header {
   text-align: center;
+
 }
 
 .container {
@@ -641,7 +647,7 @@ a {
 
 .nav.collapsible--expanded .nav__toggler {
   opacity: 1;
-  box-shadow: 0 0 0 3px #dad4d4;
+  box-shadow: 0 0 5px 2px #dad4d4;
   border-radius: 5px;
 }
 
@@ -682,12 +688,16 @@ a {
 
 .hero__image {
   margin-top: 4rem;
-  width: 100%;
+  width: 50%;
 }
 
-.hero__content  a {
+.btn__hero {
   margin-top: 5rem;
   text-align: center;
+}
+
+.hero__content {
+  padding: 3rem 1rem;
 }
 
 @media screen and (min-width: 768px) {
