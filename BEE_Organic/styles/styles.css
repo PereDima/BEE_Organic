@@ -686,7 +686,7 @@ a {
   margin: 1rem 0 3rem;
 }
 
-.hero__image {
+picture.hero__image {
   margin-top: 4rem;
   width: 50%;
 }
