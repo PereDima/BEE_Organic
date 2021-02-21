@@ -199,7 +199,7 @@ a {
 }
 
 .icon--primary {
-  color: var(--color-primary);
+  fill: var(--color-primary);
 }
 
 .icon--white {
@@ -231,6 +231,14 @@ a {
   text-transform: uppercase;
   white-space: nowrap;
   transition: 0.5s ease-in-out;
+  outline: 0;
+}
+
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 
 .btn--primary {
@@ -350,7 +358,7 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 
 .input-group .btn {
