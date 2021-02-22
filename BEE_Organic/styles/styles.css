@@ -392,13 +392,15 @@ a {
   padding: 2rem 3rem;
 }
 
+
+/* TODO: sizing of card to fit 3 element in 1024px */
 /* SHOP-CARD */
 
 .shop-card {
-  max-width: calc(100% / 4);
-  min-width: 450px;
+  max-width: 400px;
   transition: transform 0.3s ease-in-out;
 }
+
 
 .shop-card:hover {
   transform: scale(1.05);
@@ -493,6 +495,7 @@ a {
 
 .grid {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -509,7 +512,7 @@ a {
   .grid--1x3 {
     flex-direction: row;
   }
-}
+
 
 /* CALLOUTS */
 
@@ -588,7 +591,6 @@ a {
 .block {
   --padding-vertical: 5rem;
   padding: var(--padding-vertical) 2rem;
-  
 }
 
 
@@ -617,7 +619,7 @@ a {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1470px;
   margin: 0 auto;
 }
 
@@ -748,5 +750,5 @@ picture.hero__image {
 }
 
 .block-shop .card {
-  margin: 0 auto;
+
 }
