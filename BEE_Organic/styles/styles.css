@@ -397,7 +397,7 @@ a {
 /* SHOP-CARD */
 
 .shop-card {
-  max-width: 400px;
+  max-width: 350px;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -449,6 +449,7 @@ a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-flow: row wrap;
 }
 
 @media screen and (min-width: 1024px) {
@@ -495,24 +496,34 @@ a {
 
 .grid {
   display: flex;
+  /* grid-template-columns: 1fr; */
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
+  flex-flow: column wrap;
 }
 
 @media screen and (min-width: 768px) {
   .grid--1x2 {
+    /* grid-template-columns: 1fr 1fr; */
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
+    flex-flow: row wrap;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .grid--1x3 {
+    /* grid-template-columns: 1fr 1fr 1fr;  */
+    justify-content: center;
+    align-items: stretch;
     flex-direction: row;
+    flex-flow: row wrap;
   }
 
+}
 
 /* CALLOUTS */
 
@@ -747,8 +758,6 @@ picture.hero__image {
 
 .block-shop .grid {
   gap: 6rem 4rem;
-}
-
-.block-shop .card {
 
 }
+
