@@ -497,7 +497,6 @@ a {
 
 .grid {
   display: flex;
-  /* grid-template-columns: 1fr; */
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -507,7 +506,6 @@ a {
 
 @media screen and (min-width: 768px) {
   .grid--1x2 {
-    /* grid-template-columns: 1fr 1fr; */
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
@@ -516,13 +514,30 @@ a {
 
 @media screen and (min-width: 1024px) {
   .grid--1x3 {
-    /* grid-template-columns: 1fr 1fr 1fr;  */
     justify-content: center;
     align-items: stretch;
     flex-flow: row wrap;
   }
 
 }
+
+
+/* .grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}  */
 
 /* CALLOUTS */
 
@@ -724,9 +739,9 @@ a {
   margin: 1rem 0 3rem;
 }
 
-picture.hero__image {
+picture .hero__image {
   margin-top: 4rem;
-  width: 0;
+  min-width: fit-content;
 }
 
 .btn__hero {
@@ -764,7 +779,6 @@ picture.hero__image {
 
 .block-shop .grid {
   gap: 6rem 4rem;
-
 }
 
 
