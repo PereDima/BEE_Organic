@@ -20,6 +20,7 @@ html {
   font-size: 62.5%;
 }
 
+
 /* GLASS */
 
 .glass {
@@ -509,7 +510,6 @@ a {
     /* grid-template-columns: 1fr 1fr; */
     justify-content: center;
     align-items: center;
-    flex-direction: row;
     flex-flow: row wrap;
   }
 }
@@ -519,7 +519,6 @@ a {
     /* grid-template-columns: 1fr 1fr 1fr;  */
     justify-content: center;
     align-items: stretch;
-    flex-direction: row;
     flex-flow: row wrap;
   }
 
@@ -602,6 +601,7 @@ a {
 .block {
   --padding-vertical: 5rem;
   padding: var(--padding-vertical) 2rem;
+  margin: 0 auto;
 }
 
 
@@ -632,11 +632,13 @@ a {
   text-align: center;
 
 }
-
+ 
 .container {
-  max-width: 1470px;
+  max-width: 1640px;
   margin: 0 auto;
 }
+
+
 
 /* NAVIGATION */
 
@@ -724,7 +726,7 @@ a {
 
 picture.hero__image {
   margin-top: 4rem;
-  width: 50%;
+  width: 0;
 }
 
 .btn__hero {
