@@ -741,7 +741,7 @@ a {
 
 picture .hero__image {
   margin-top: 4rem;
-  min-width: fit-content;
+  min-width: 100%;
 }
 
 .btn__hero {
