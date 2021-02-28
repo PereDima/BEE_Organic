@@ -500,7 +500,6 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   flex-flow: column wrap;
 }
 
@@ -623,6 +622,7 @@ a {
 .block--dark {
   background: #000;
   color: var(--color-border);
+
 }
 
 .block--dark .block__heading {
@@ -733,6 +733,10 @@ a {
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
+.hero:nth-child(odd){
+  width: fit-content;
+}
+
 .hero__parag {
   font-size: 1.8rem;
   letter-spacing: .5px;
@@ -770,6 +774,10 @@ picture .hero__image {
 
   .hero__heading {
     font-size: 7rem;
+  }
+
+  .hero:nth-child(odd){
+    width: 100%;
   }
 }
 
