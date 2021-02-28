@@ -20,6 +20,15 @@ html {
   font-size: 62.5%;
 }
 
+html:nth-child(odd){
+  width: fit-content;
+}
+
+@media screen and (min-width: 1024px) {
+  html:nth-child(odd){
+    width: auto;
+  }
+}
 
 /* GLASS */
 
@@ -383,6 +392,8 @@ a {
   transition: box-shadow 0.4s ease;
 }
 
+
+
 .card:hover {
   box-shadow: 0 0 10px 5px var(--color-body);
 }
@@ -502,6 +513,7 @@ a {
   align-items: center;
   flex-flow: column wrap;
 }
+
 
 @media screen and (min-width: 768px) {
   .grid--1x2 {
@@ -733,9 +745,6 @@ a {
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
-.hero:nth-child(odd){
-  width: fit-content;
-}
 
 .hero__parag {
   font-size: 1.8rem;
@@ -760,8 +769,11 @@ picture .hero__image {
 @media screen and (min-width: 768px) {
 
   .hero__content {
-    text-align: left;
     align-self: center;
+  }
+
+  .hero__parag {
+    text-align: left;
   }
 
   .hero__parag {
@@ -776,9 +788,6 @@ picture .hero__image {
     font-size: 7rem;
   }
 
-  .hero:nth-child(odd){
-    width: 100%;
-  }
 }
 
 
