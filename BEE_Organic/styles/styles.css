@@ -652,7 +652,7 @@ a {
   color: #fff;
 }
 
-/* .block--skewed-right {
+.block--skewed-right {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
@@ -660,7 +660,7 @@ a {
 .block--skewed-left {
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-} */
+}
 
 .block__header {
   text-align: center;
@@ -747,9 +747,9 @@ a {
 
 /* HERO */
 
-/* .hero {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-} */
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+}
 
 
 .hero__parag {
@@ -900,13 +900,12 @@ picture .hero__image {
 /* ABOUT US*/
 
 
-/* .about {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
-}
-
 .about--two {
-  clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
-} */
+  clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+  
+}
 
 .about__heading {
   text-align: center;
