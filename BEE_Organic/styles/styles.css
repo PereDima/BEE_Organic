@@ -30,6 +30,10 @@ html:nth-child(odd){
   }
 }
 
+.img--shadow {
+  filter: drop-shadow(0px 0px 1rem);
+}
+
 /* GLASS */
 
 .glass {
@@ -122,7 +126,7 @@ h3 {
 
 p {
   margin-top: 0;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.08rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -514,20 +518,24 @@ a {
   flex-flow: column wrap;
 }
 
+.grid--rewerse {
+  flex-flow: column-reverse;
+}
 
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: row;
   }
+
 }
 
 @media screen and (min-width: 1024px) {
   .grid--1x3 {
     justify-content: center;
     align-items: stretch;
-    flex-flow: row wrap;
+    flex-flow: row;
   }
 
 }
@@ -634,7 +642,6 @@ a {
 .block--dark {
   background: #000;
   color: var(--color-border);
-
 }
 
 .block--dark .block__heading {
@@ -645,7 +652,7 @@ a {
   color: #fff;
 }
 
-.block--skewed-right {
+/* .block--skewed-right {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
@@ -653,7 +660,7 @@ a {
 .block--skewed-left {
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-}
+} */
 
 .block__header {
   text-align: center;
@@ -661,7 +668,7 @@ a {
 }
  
 .container {
-  max-width: 1640px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -671,7 +678,6 @@ a {
 
 /* TODO: change colors for nav menu!!!!
 
-  add "menu icon" to sprite!!!
 */
 
 .nav {
@@ -741,15 +747,16 @@ a {
 
 /* HERO */
 
-.hero {
+/* .hero {
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-}
+} */
 
 
 .hero__parag {
   font-size: 1.8rem;
   letter-spacing: .5px;
   margin: 1rem 0 3rem;
+  text-align: left;
 }
 
 picture .hero__image {
@@ -766,14 +773,19 @@ picture .hero__image {
   padding: 3rem 1rem;
 }
 
+
+.media__image .icon-container{
+  background: none;
+}
+
+.media__image .icon--primary {
+  fill: var(--color-accent);
+}
+
 @media screen and (min-width: 768px) {
 
   .hero__content {
     align-self: center;
-  }
-
-  .hero__parag {
-    text-align: left;
   }
 
   .hero__parag {
@@ -885,3 +897,42 @@ picture .hero__image {
 
 }
 
+/* ABOUT US*/
+
+
+/* .about {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+}
+
+.about--two {
+  clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
+} */
+
+.about__heading {
+  text-align: center;
+  margin-bottom: 1em;
+  padding: 2rem 3rem;
+}
+
+.about__header {
+  padding: 2rem 4rem;
+}
+
+.about__picture .about__image {
+  max-width: 100%;
+  margin-top: 4rem;
+  border-radius: var(--border-radius);
+}
+
+@media screen and (min-width: 768px) {
+
+  .about__picture {
+    min-width: 50%;
+    margin-top: 1rem;
+  }
+
+  .about__picture .about__image {
+    margin-top: 1rem;
+  }
+ 
+}
