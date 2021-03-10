@@ -297,15 +297,17 @@ a {
 
 .btn--outline {
   background: #fff;
-  border: 3px solid var(--color-headings);
-  color: var(--color-headings);
+  border: 1px solid var(--color-secondary);
+  color: var(--color-secondary);
 }
 
 .btn--outline:hover {
-  background: var(--color-headings);
+  background: var(--color-primary);
   /* box-shadow: 0 0 7px 3px var(--color-headings); */
-  color: aliceblue;
+  border: 1px solid var(--color-primary);
+  color: var(--color-secondary);
 }
+  
 
 @media screen and (min-width: 1024px) {
   .btn {
@@ -410,6 +412,7 @@ a {
 .card__img  img {
   margin: 2rem 1rem;
   border-radius: var(--border-radius);
+  max-width: 100%;
 }
 
 
@@ -435,7 +438,6 @@ a {
   margin: 1rem 3rem;
 }
 
-.
 
 .shop-card__price {
   margin-top: 1rem;
@@ -458,7 +460,7 @@ a {
   font-weight: 300;
   padding: 1rem 2rem;
   margin: 1rem 1rem;
-  border: 1px solid var(--color-headings);
+  /* border: 1px solid var(--color-secondary); */
 }
 
 .shop-card__description {
@@ -540,7 +542,7 @@ a {
 @media screen and (min-width: 1024px) {
   .grid--1x3 {
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     flex-flow: row;
   }
 
@@ -705,10 +707,12 @@ a {
   border-bottom: 1px solid #ccc;
 }
 
+
 .nav__item > a {
   color: #ccc;
   transition: color 0.4s;
 }
+
 
 .nav__item > a:hover {
   color: yellow;
