@@ -945,3 +945,44 @@ picture .hero__image {
   }
  
 }
+
+
+/* KNOW-SECTION */
+
+.know-section {
+  display: grid;
+
+}
+
+.know__text  li {
+  font-size: 1.8rem;
+  letter-spacing: .5px;
+  margin: 1rem 0 3rem;
+}
+
+.know__text {
+  letter-spacing: 1px;
+}
+
+.know__heading {
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+
+@media screen and (min-width: 768px) {
+
+  .know__text  li {
+    font-size: 1.6rem;
+  }
+
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+  .know-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
