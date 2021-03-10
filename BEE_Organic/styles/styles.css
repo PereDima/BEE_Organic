@@ -388,24 +388,28 @@ a {
 /* CARD */
 
 .card {
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   box-shadow: 0 0 10px 5px #dad4d4;
   overflow: hidden;
   text-align: center;
-  padding: 0.5rem 1.5rem;
+  padding: 1rem 2rem;
   transition: box-shadow 0.4s ease;
 }
 
 
 
 .card:hover {
-  box-shadow: 0 0 10px 5px var(--color-body);
+  box-shadow: 0 0 10px 5px #ada9a9;
 }
 
 .card__header,
-.card__body,
-.card__img {
+.card__body {
   padding: 2rem 1rem;
+}
+
+.card__img  img {
+  margin: 2rem 1rem;
+  border-radius: var(--border-radius);
 }
 
 
@@ -413,7 +417,7 @@ a {
 /* SHOP-CARD */
 
 .shop-card {
-  max-width: 420px;
+  max-width: 450px;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -428,8 +432,10 @@ a {
   font-weight: 700;
   font-size: 4rem;
   letter-spacing: 1px;
-  padding: 1rem 3rem;
+  margin: 1rem 3rem;
 }
+
+.
 
 .shop-card__price {
   margin-top: 1rem;
@@ -526,7 +532,7 @@ a {
   .grid--1x2 {
     justify-content: center;
     align-items: center;
-    flex-flow: row;
+    flex-flow: row wrap;
   }
 
 }
