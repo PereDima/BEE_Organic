@@ -1,28 +1,30 @@
    <!-- nav bar -->
 
    <nav class="nav collapsible">
-    <a href="/BEE_Organic/"><img src="./images/logo300.png" alt=""></a>
+    <a href="index.html"><img src="./images/logo300.png" alt=""></a>
       <svg class="icon icon--white nav__toggler">
         <use xlink:href="images/sprite-2.svg#menu"></use>
       </svg>
     <ul class="lists nav__list collapsible__content">
-      <li class="nav__item"><a href="#">ПРО НАС</a></li>
-      <li class="nav__item"><a href="#">ПРОДУКЦІЯ</a></li>
-      <li class="nav__item"><a href="#">КОРИСНО ЗНАТИ</a></li>
-      <li class="nav__item"><a href="#">ЗВОРОТНІЙ ЗВ'ЯЗОК</a></li>
-      <li class="nav__item"><a href="#">ПОКУПКИ</a></li>
+      <li class="nav__item"><a href="#about">ПРО НАС</a></li>
+      <li class="nav__item"><a href="#know">КОРИСНО ЗНАТИ</a></li>
+      <li class="nav__item"><a href="#shop">ПРОДУКЦІЯ</a></li>
+      <li class="nav__item"><a href="#footer">ЗВОРОТНІЙ ЗВ'ЯЗОК</a></li>
+      <li class="nav__item"><a href="#chart">ПОКУПКИ</a></li>
     </ul>
   </nav>
   
     <!-- hero element -->
 
   <section class="block  block--skewed-left block--dark hero">
+
+    <h1 class="block__heading hero__heading heading-dec">
+      Натуральний мед з власної пасіки
+    </h1>
+
     <div class="container grid grid--1x3">
       
       <header class="block__header hero__content">
-        <h1 class="block__heading hero__heading">
-          Натуральний мед з власної пасіки
-        </h1>
     
   
           <div class="media">
@@ -76,7 +78,7 @@
   
           <br>
   
-          <a href="" class="btn btn--accent btn--stretched btn__hero">
+          <a href="#shop" class="btn btn--accent btn--stretched btn__hero">
             магазин
           </a>
   
@@ -95,9 +97,9 @@
 
     <!-- about as section -->
 
-    <div>
+    <div id="about">
       <section class="block">
-        <h2 class="block__heading  about__heading">Чому варто вибрати саме нас?</h2>
+        <h2 class="block__heading  about__heading heading-dec">Чому варто вибрати саме нас?</h2>
         <div class=" container grid grid--1x3">
             <header class="about__header">
               <p class="hero__parag"><strong>«BEE ORGANIC»</strong> - це інтернет-магазин виключно натурального меду з натуральних пасік розташованих в екологічно чистих куточках України.</p>
@@ -148,8 +150,8 @@
 
     <!-- know section -->
 
-    <section class="block block--dark ">
-      <h2 class="block__heading  about__heading">Корисно знати</h2>
+    <section id="know" class="block block--dark ">
+      <h2 class="block__heading  about__heading heading-dec">Корисно знати</h2>
        <div class=" container know-section">
           <header class="about__header">
             <h3 class="know__heading" >Чому мед є таким  важливим для здоров’я  дитини?</h3>
@@ -203,7 +205,8 @@
 
     <!-- shop section -->
 
-    <section class="block  block-shop ">
+    <section id="shop" class="block  block-shop ">
+      <h2 class="about__heading heading-dec">Наша  продукція</h2>
       <div class=" container grid grid--1x2">
     
         <div class="shop-card">
@@ -437,10 +440,13 @@
       </div>
     </section>
 
+    <!-- backfeed -->
+
+    
    
     <!-- footer section -->
 
-    <footer class="block block--dark">
+    <footer id="footer" class="block block--dark">
       <div class="container grid footer__sections">
     
         <section class="footer__container">
@@ -453,7 +459,7 @@
             </header>
             <div class="collapsible__content">
               <ul class="lists">
-                <li><a href="#">Про нас</a></li>
+                <li><a href="#about">Про нас</a></li>
                 <li><a href="#">Наша команда</a></li>
                 <li><a href="#">Відзнаки</a></li>
               </ul>
@@ -469,10 +475,10 @@
             </header>
             <div class="collapsible__content">
               <ul class="lists">
-                <li><a href="#">Мед</a></li>
-                <li><a href="#">Солодощі</a></li>
-                <li><a href="#">Креми</a></li>
-                <li><a href="#">Свічки</a></li>
+                <li><a href="#shop">Мед</a></li>
+                <li><a href="#shop">Солодощі</a></li>
+                <li><a href="#shop">Креми</a></li>
+                <li><a href="#shop">Свічки</a></li>
               </ul>
             </div>
           
@@ -496,7 +502,7 @@
         </section>
     
         <section class="footer__logo">
-          <img src="./images/logo300.png" alt="">
+          <a href="index.html"><img src="./images/logo300.png" alt=""></a>
           <p class="footer__copyright">
             Copyright 2021 | Dmytro Pereklita
           </p>
