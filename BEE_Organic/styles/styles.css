@@ -130,6 +130,18 @@ p {
   letter-spacing: 0.08rem;
 }
 
+.heading-dec::after {
+  content: '';
+  display: block;
+  width: 25%;
+  margin-top: 1.5rem;
+  border-bottom: 3px solid var(--color-primary);
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
 @media screen and (min-width: 1024px) {
   body {
     font-size: 1.8rem;
@@ -780,6 +792,10 @@ picture .hero__image {
   text-align: center;
 }
 
+.hero__heading {
+  text-align: center;
+}
+
 .hero__content {
   padding: 3rem 1rem;
 }
@@ -964,7 +980,7 @@ picture .hero__image {
 .know__text {
   letter-spacing: 1px;
   color: #ccc;
-  
+
 }
 
 .know__heading {
