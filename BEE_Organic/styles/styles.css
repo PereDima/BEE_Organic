@@ -225,6 +225,11 @@ a {
   height: 40px;
 }
 
+a .icon {
+  width: 15px;
+  height: 15px;
+}
+
 .icon--primary {
   fill: var(--color-primary);
 }
