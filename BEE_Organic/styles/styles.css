@@ -180,7 +180,7 @@ a {
 }
 
 .link-arrow:hover::after {
-  margin-left: 15 px;
+  margin-left: 15px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -597,6 +597,7 @@ a {
 .callout .btn {
   justify-self: center;
   align-self: center;
+  margin: 4rem 2rem 0 2rem;
 }
 
 .callout__content {
@@ -605,7 +606,9 @@ a {
 
 @media screen and (min-width: 768px) {
   .callout .grid--1x2 {
-    grid-template-columns: 1fr auto;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
   }
 
   .callout__content {
@@ -614,7 +617,6 @@ a {
 
   .callout .btn {
     justify-self: start;
-    margin: 0 2rem;
   }
 }
 
