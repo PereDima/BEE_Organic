@@ -1089,3 +1089,54 @@ picture .hero__image {
 .feedback .btn {
   text-align: left;
 }
+
+/* CHART */
+
+.chart-container {
+  font-weight: 700;
+}
+.chart--items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+  font-weight: 700;
+  min-height: 70px;
+}
+
+
+.chart-result {
+  max-width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.chart-result span {
+  margin: 1rem 4rem;
+}
+
+.chart-footer {
+  max-width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.chart-footer .btn {
+  padding: 2rem 6rem;
+  margin: 1rem 5rem;
+}
+
+/* @media screen and (min-width: 768px) {
+
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}  */
