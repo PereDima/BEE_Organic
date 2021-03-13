@@ -262,13 +262,13 @@ a .icon {
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
-  transition: 0.5s ease-in-out;
+  transition: 0.35s ease-in-out;
   outline: 0;
 }
 
 .btn .icon {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   margin-right: 1rem;
   vertical-align: middle;
 }
@@ -424,11 +424,10 @@ a .icon {
 
 .card__header,
 .card__body {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
 }
 
 .card__img  img {
-  margin: 2rem 1rem;
   border-radius: var(--border-radius);
   max-width: 100%;
 }
@@ -438,23 +437,24 @@ a .icon {
 /* SHOP-CARD */
 
 .shop-card {
-  max-width: 450px;
+  max-width: 550px;
   transition: transform 0.3s ease-in-out;
 }
 
 
 .shop-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 
 }
 
 .shop-card__name {
   margin: 0;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 3rem;
   letter-spacing: 1px;
-  margin: 1rem 3rem;
+  margin: 1rem 2rem;
 }
+
 
 
 .shop-card__price {
@@ -464,37 +464,49 @@ a .icon {
 
 .old__price {
   text-decoration: line-through;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .new__price {
   color: red;
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: 500;
 }
+
+.shop-card__amounth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
 
 .shop-card__amounth .btn--outline {
   font-size: 2rem;
   font-weight: 300;
-  padding: 1rem 2rem;
-  margin: 1rem 1rem;
-  /* border: 1px solid var(--color-secondary); */
+  padding: 1rem 3rem;
+  margin: 1rem 2rem;
+  border: 1px solid var(--color-secondary);
+  text-transform: none;
 }
 
 .shop-card__description {
   font-size: 2rem;
   font-weight: 300;
-  left: 1px;
 }
 
-.shop-card-body {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-flow: row wrap;
-}
 
 @media screen and (min-width: 1024px) {
+
+  .shop-card__amounth .btn--outline {
+    padding: 1rem 2rem;
+  }
+
+  .shop-card {
+    max-width: 370px;
+    transition: transform 0.3s ease-in-out;
+  }
+
   .shop-card__name {
     font-size: 2.8rem;
   }
@@ -512,7 +524,7 @@ a .icon {
   }
 
   .new__price {
-    font-size: 3.6rem;
+    font-size: 2.5rem;
   }
 
   .old__price {
@@ -841,7 +853,7 @@ picture .hero__image {
 /* SHOP-BLOCK */
 
 .block-shop .grid {
-  gap: 6rem 4rem;
+  gap: 4rem;
 }
 
 
@@ -888,7 +900,7 @@ picture .hero__image {
   .footer__sections {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
   }
 
@@ -900,7 +912,7 @@ picture .hero__image {
   .footer__container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
   }
 
