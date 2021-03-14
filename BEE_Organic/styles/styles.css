@@ -780,7 +780,7 @@ a .icon {
 
 
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1023px) {
 
   .nav__toggler {
     display: none;
@@ -1128,7 +1128,7 @@ picture .hero__image {
 
 .chart--item-amounth{
   display: grid;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 15% 50% 15%;
   justify-items: center;
 }
 
@@ -1139,17 +1139,17 @@ picture .hero__image {
   border-radius: 5px;
   width: 100%;
   text-align: center;
-  line-height: 3rem;
   margin: 0 5px;
-  transition: background-color 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
+
 .am-plus:hover {
-  background-color: var(--color-accent);
+  box-shadow: inset 0 0 10px #60aa2f;
 }
 
 .am-minus:hover {
-  background-color: rgba(255, 0, 0);
+  box-shadow: inset 0 0 10px rgb(255, 85, 85);
 }
 
 .chart-container {
@@ -1190,20 +1190,44 @@ picture .hero__image {
   margin-left: 1rem;
 }
 
+.chart--item-name img {
+  position: relative;
+  left: -1rem;
+  max-width: 100px;
+  margin: 0;
+}
+
+
+
+
+/* 
+
+mobile version 
+
+*/
 
 @media screen and (max-width: 1023px) {
 
+
   .chart--item-name {
     text-transform: uppercase;
+  }
+
+  .chart--item-name img {
+    max-width: 150px;
   }
 
   .chart--block {
     --padding-vertical: 4rem;
     padding: var(--padding-vertical) 2rem;
     margin: 0 auto;
-    border: 1px transparent var(--color-border);
+    border: 1px solid rgba(0, 0, 0, 0.24);
     margin: 2rem 0;
-    box-shadow: 0 0 10px var(--color-border);
+    box-shadow: inset 0 0 20px #ccc,
+                inset 0 0 10px rgb(130, 130, 130),
+                      0 0 35px #ccc,
+                      0 0 10px rgb(110, 110, 110),
+                      0 0 30px rgb(120, 120, 120);
   }
 
   .chart--heading {
@@ -1214,6 +1238,7 @@ picture .hero__image {
   .chart-items {
     flex-wrap: wrap;
     border-radius: var(--border-radius);
+    margin: 4rem auto;
 
   }
 
@@ -1249,7 +1274,7 @@ picture .hero__image {
   }
 
   .chart--item-price::before {
-    content: 'Ціна/грн:';
+    content: 'Ціна за одиницю/грн:';
     opacity: 0.7;
     margin-right: 2rem;
     width: 100%;
@@ -1286,6 +1311,10 @@ picture .hero__image {
 
 }
 
+
+
+
+/* desctop version */
 
 @media screen and (min-width: 1024px) {
 
@@ -1346,8 +1375,12 @@ picture .hero__image {
   .chart--item-total-price,
   .chart--item-delete {
     margin: 1rem 2rem;
-    width: 140px;
+    width: 120px;
     text-align: center;
+  }
+
+  .chart--item-name {
+    width: 200px;
   }
   
   .chart--block {
@@ -1359,6 +1392,10 @@ picture .hero__image {
     display: block;
     font-size: 2rem;
     margin-top: 2rem;
+  }
+
+  .chart--item-amounth{
+    grid-template-columns: 30% 40% 30%;
   }
   
   .chart-footer {
