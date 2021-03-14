@@ -1090,53 +1090,296 @@ picture .hero__image {
   text-align: left;
 }
 
+
+
+
+
 /* CHART */
 
-.chart-container {
-  font-weight: 700;
+
+.chart--item-delete {
+  transition: fill 0.2s ease-in-out;
 }
-.chart--items {
+
+.chart--item-delete .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+
+.chart--item-delete:hover {
+  fill: red;
+  cursor: pointer;
+}
+
+.chart--item-name,
+.chart--item-price,
+.chart--item-amounth-main,
+.chart--item-amounth,
+.chart--item-total-price,
+.chart--item-delete {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 50px;
+}
+
+.chart--item-amounth{
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 20% 60% 20%;
   justify-items: center;
-  align-items: center;
-  font-weight: 700;
-  min-height: 70px;
 }
 
+.am-minus,
+.am-number,
+.am-plus {
+  border: 2px solid var(--color-border);
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  line-height: 3rem;
+  margin: 0 5px;
+  transition: background-color 0.2s ease-in-out;
+}
 
-.chart-result {
-  max-width: 90%;
+.am-plus:hover {
+  background-color: var(--color-accent);
+}
+
+.am-minus:hover {
+  background-color: rgba(255, 0, 0);
+}
+
+.chart-container {
+  margin: 4rem 2rem;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
-.chart-result span {
-  margin: 1rem 4rem;
-}
-
-.chart-footer {
-  max-width: 90%;
+.chart-body {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
 .chart-footer .btn {
-  padding: 2rem 6rem;
-  margin: 1rem 5rem;
+  display: inline-block;
+  padding: 2rem 4.5rem;
 }
 
-/* @media screen and (min-width: 768px) {
+.chart-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
 
-  .grid--1x2 {
-    grid-template-columns: repeat(2, 1fr);
+.chart-container {
+  margin: 4rem;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.chart-result-total-price::after {
+  content: 'грн';
+  margin-left: 1rem;
+}
+
+
+@media screen and (max-width: 1023px) {
+
+  .chart--item-name {
+    text-transform: uppercase;
   }
+
+  .chart--block {
+    --padding-vertical: 4rem;
+    padding: var(--padding-vertical) 2rem;
+    margin: 0 auto;
+    border: 1px transparent var(--color-border);
+    margin: 2rem 0;
+    box-shadow: 0 0 10px var(--color-border);
+  }
+
+  .chart--heading {
+    font-weight: 700;
+    display: none;
+  }
+
+  .chart-items {
+    flex-wrap: wrap;
+    border-radius: var(--border-radius);
+
+  }
+
+  .chart--item-delete {
+    text-align: center;
+  }
+
+  .chart--item-name,
+  .chart--item-price,
+  .chart--item-total-price {
+    font-weight: 600;
+    border-bottom: 3px dotted var(--color-border);
+  }
+
+
+  .chart--item-delete {
+    border: 1px transparent red;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 7px var(--color-border);
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  .chart--item-delete:hover {
+    box-shadow: inset 0 0 5px red;
+  }
+
+  .chart--item-name::before {
+    content: 'Назва товару:';
+    opacity: 0.7;
+    margin-right: 3rem;
+    font-weight: 400;
+    text-transform: none;
+  }
+
+  .chart--item-price::before {
+    content: 'Ціна/грн:';
+    opacity: 0.7;
+    margin-right: 2rem;
+    width: 100%;
+    font-weight: 400;
+  }
+  .chart--item-total-price::before {
+    content: 'Загальна ціна/грн:';
+    opacity: 0.7;
+    margin-right: 2rem;
+    width: 100%;
+    font-weight: 400;
+  }
+
+  .chart--item-amounth {
+    width: 100%;
+  }
+
+  .chart--item-delete {
+    width: 100%;
+  }
+
+  .chart-result-amouth,
+  .chart-result-total-price {
+    display: block;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .chart-bottom .btn {
+    display: block;
+    margin-top: 3rem;
+    width: 100%;
+  }
+
 }
+
 
 @media screen and (min-width: 1024px) {
-  .grid--1x3 {
-    grid-template-columns: repeat(3, 1fr);
+
+  .chart-container {
+    max-width: 1440px;
+    margin: 4rem auto;
   }
-}  */
+
+  .chart--heading {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .chart--item-delete {
+    border: 1px transparent red;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 7px var(--color-border);
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  .chart--item-delete:hover {
+    box-shadow: inset 0 0 5px red;
+  }
+
+  .clear {
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .clear:hover {
+    border: none;
+    box-shadow: none;
+    cursor: auto;
+    border-radius: none;
+  }
+
+  .chart-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 2rem 2rem;
+    margin: 2rem;
+  }
+
+  .chart-items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* justify-items: center;
+    align-items: center; */
+  }
+
+
+  .chart--item-name,
+  .chart--item-price,
+  .chart--item-amounth-main,
+  .chart--item-amounth,
+  .chart--item-total-price,
+  .chart--item-delete {
+    margin: 1rem 2rem;
+    width: 140px;
+    text-align: center;
+  }
+  
+  .chart--block {
+    border-bottom: 1px dotted var(--color-border);
+  }
+
+  .chart-result-amouth,
+  .chart-result-total-price {
+    display: block;
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .chart-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;;
+  }
+  
+  .chart-bottom {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  } 
+
+  .chart-bottom .btn {
+    display: block;
+    padding: 1.5rem 7rem;
+    margin: 1rem 3rem;
+  } 
+
+}
