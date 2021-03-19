@@ -18,6 +18,7 @@
 html {
   /* !!! font-size: 62.5% = 10px !!!  */
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 html > * {
@@ -704,7 +705,7 @@ TODO:
 
 
 .block--bg {
-  background: url(/images/bg.png), radial-gradient(ellipse at center,#ffe760, #ffad1f);
+  background: url(/images/bg.png) round, radial-gradient(ellipse at center,#ffe760, #ffad1f);
   background-blend-mode: soft-light;
   background-attachment: fixed;
   width: 100%;
