@@ -833,7 +833,7 @@ TODO:
 
 .hero {
   clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
-  
+  padding:3rem 4rem ;
 }
 
 
@@ -1034,6 +1034,10 @@ picture .hero__image {
 
 
 /* KNOW-SECTION */
+
+.know {
+  padding: 4rem;
+}
 
 .know-section {
   display: grid;
